@@ -22,7 +22,7 @@ include("db.php");
             <input type="text" name="ItemCode" placeholder="Item Code" required class="border px-2 py-1 w-full sm:w-40">
             <input type="text" name="ItemDesc" placeholder="Item Description" required class="border px-2 py-1 w-full sm:w-60">
             <input type="number" name="TotSupply" placeholder="Total Supply" required class="border px-2 py-1 w-full sm:w-32">
-            <button type="submit" class="bg-gray-300 px-4 py-1 border">Add</button>
+            <button type="submit" class="bg-blue-300 px-4 py-1 border">Add</button>
         </form>
     </div>
 
@@ -38,6 +38,7 @@ include("db.php");
 
         <form method="POST" action="trans_entry_process.php" class="flex flex-wrap gap-2">
             <input type="hidden" name="action" value="add_transaction">
+            <!-- <label for="">Account Name</label> -->
             <input type="text" name="AcctName" placeholder="Accountable Name" required class="border px-2 py-1 w-full sm:w-60">
 
             <select name="ItemCodeID" required class="border px-2 py-1 w-full sm:w-64">
@@ -55,8 +56,8 @@ include("db.php");
             <input type="number" name="NumOfItem" placeholder="Number of Items" min="1" required class="border px-2 py-1 w-full sm:w-32">
 
             <div class="flex gap-2 items-center">
-                <button type="submit" class="bg-gray-300 px-4 py-1 border">Add</button>
-                <a href="transaction_summary.php" class="px-3 py-1 bg-gray-200 border text-gray-700 text-xs">History</a>
+                <button type="submit" class="bg-blue-300 px-4 py-1 border">Add</button>
+                <a href="transaction_summary.php" class="px-3 py-1 bg-green-200 border">History</a>
             </div>
         </form>
     </div>
