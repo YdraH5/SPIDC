@@ -93,7 +93,7 @@ include("db.php");
                             <td class="border px-2 py-1"><input name="TotSupplyLeft" type="number" value="<?= $item['TotSupplyLeft'] ?>" class="w-full border px-1 py-0.5"></td>
                             <td class="border px-2 py-1">
                                 <div class="flex gap-1">
-                                    <button type="submit" class="bg-gray-300 px-2 py-0.5 text-xs border">Update</button>
+                                    <button type="submit" class="bg-yellow-300 px-2 py-0.5 text-xs border">Update</button>
                                     <a href="crud_item.php?action=delete&RecordNo=<?= $item['RecordNo'] ?>" onclick="return confirm('Delete item?')" class="bg-gray-200 px-2 py-0.5 text-xs border">Delete</a>
                                 </div>
                             </td>
