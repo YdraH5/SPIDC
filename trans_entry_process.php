@@ -1,6 +1,7 @@
 <?php
 include("db.php");
 
+
 if ($_POST['action'] === 'add_transaction') {
     $itemCodeID = $_POST['ItemCodeID'];
     $acctName = $_POST['AcctName'];
